@@ -78,10 +78,9 @@ Below are the differences from the paper
 * Batchnorm layers in yolo specific 4 convolutional layers added
 * Learning rate of 1E-2 ended up being too high in my experiments so I changed it to 1E-3(without warmup) and then decaying by factor of 0.5 after 50,75,100, 125 epochs. 
 * Other hyper-parameters have directly been picked from paper and have not been tuned.
-* With linear prediciton layers, I was only getting mAP of ~52% . With following changes that increased to ~58%
-  * Sigmoid for box predictions. `use_sigmoid` parameter in config
-  * 1x1 conv layers for yolo prediction layers instead of fc layers. `use_conv` parameter in config
-  * To get the same prediction layers as paper, set `use_conv` and `use_sigmoid` as False in config.
+* Sigmoid for box predictions. `use_sigmoid` parameter in config
+* 1x1 conv layers for yolo prediction layers instead of fc layers. `use_conv` parameter in config
+* To get the same prediction layers as paper, set `use_conv` and `use_sigmoid` as False in config.
 
 ## For modifications 
 * In case you have GPU which does not support 64 batch size, you can use a smaller batch size like 16 and then have `acc_steps` in config set as 4.
