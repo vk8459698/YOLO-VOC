@@ -5,8 +5,6 @@ This repository implements Yolo, specifically [Yolov1](https://arxiv.org/pdf/150
 The repo has code to train Yolov1 on voc dataset. Specifically I trained on trainval images of VOC 2007+2012 dataset.
 For testing, I use VOC2007 test set.
 
-## YOLOv1 Explanation and Implementation Video
-
 ## Sample Output by training YOLOv1 on VOC 2007+2012 dataset 
 Prediction(Top) | Class Grid Map(Bottom)
 </br>
