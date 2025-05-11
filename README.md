@@ -7,10 +7,6 @@ For testing, I use VOC2007 test set.
 
 ## YOLOv1 Explanation and Implementation Video
 
-<a href="https://youtu.be/TPD9AfY7AHo">
-   <img alt="YOLOv1 Explanation and Implementation" src="https://github.com/user-attachments/assets/ccc0935b-b314-4841-9dc2-c594462b9062" width="300">
-</a>
-
 ## Sample Output by training YOLOv1 on VOC 2007+2012 dataset 
 Prediction(Top) | Class Grid Map(Bottom)
 </br>
@@ -119,23 +115,3 @@ During training of Yolov1 the following output will be saved
 During inference the following output will be saved
 * Sample prediction outputs for images in ```task_name/samples/preds/*.jpeg``` 
 * Sample grid class outputs for images in ```task_name/samples/grid_cls/*.jpeg``` 
-
-## Citations
-```
-@article{DBLP:journals/corr/RedmonDGF15,
-  author       = {Joseph Redmon and
-                  Santosh Kumar Divvala and
-                  Ross B. Girshick and
-                  Ali Farhadi},
-  title        = {You Only Look Once: Unified, Real-Time Object Detection},
-  journal      = {CoRR},
-  volume       = {abs/1506.02640},
-  year         = {2015},
-  url          = {http://arxiv.org/abs/1506.02640},
-  eprinttype    = {arXiv},
-  eprint       = {1506.02640},
-  timestamp    = {Mon, 13 Aug 2018 16:48:08 +0200},
-  biburl       = {https://dblp.org/rec/journals/corr/RedmonDGF15.bib},
-  bibsource    = {dblp computer science bibliography, https://dblp.org}
-}
-```
